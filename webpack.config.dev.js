@@ -1,27 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index',
-
-  externals: {
-    react: {
-      root: 'React',
-      amd: 'react',
-      commonjs: 'react',
-      commonjs2: 'react',
-    },
-    'prop-types': {
-      root: 'PropTypes',
-      amd: 'prop-types',
-      commonjs: 'prop-types',
-      commonjs2: 'prop-types',
-    },
-  },
+  entry: './example/index.js',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    libraryTarget: 'umd',
   },
 
   module: {
